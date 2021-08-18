@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#header {
+  background: #A9A9CC;
+  width: 100vw;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#header h1 {
+  text-align: center;
+  position: relative;
+  top: 10px;
+  bottom: 10px;
+  
+}
+#main {
+  position: absolute;
+  background-color: #D9E3E9;
+  top: 60px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#main .container {
+  width: 250px;
+  height: 200px;
+  border-radius: 15px;
+  border: 1px solid rgba(100,100,200,0.3);
+  background: #EBECF1;
+  
+}
+#main .container .content h2 {
+  text-align: center;
+  padding: 5px;
+  border-bottom: 1px solid #A9A9CC;
+}
+#main .container .input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+#main .container .input label {
+  font-size: 20px;
+  padding: 5px;
+  margin: 5px;
+}
+#main .container .input button {
+  background-color: #A5D4DE;
+  margin: 15px 25px;  
+  border-radius: 5px;
+  border 1px solid #FFF;
+}
+#main .container .input button a{
+  font-size: 18px;
+  padding: 10px;
+  text-decoration: none;
+}
+#main .container .input button:hover {
+    background-color: #425C81;
+}
+#main .container .input button:hover a {
+  color: #FFF;
+}
