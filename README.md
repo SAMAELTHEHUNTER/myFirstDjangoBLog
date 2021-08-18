@@ -1,1 +1,1 @@
-# my first django project
+#myFirstDjangoProject
