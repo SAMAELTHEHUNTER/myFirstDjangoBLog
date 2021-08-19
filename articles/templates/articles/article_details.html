@@ -2,7 +2,7 @@
 {% load static %}
 
 {%block title%}
-<title>{{article.title}}</title>
+{{article.title}}
 {%endblock%}
 
 {%block importStatics%}
@@ -10,6 +10,7 @@
 {%endblock%}
 
 {%block content%}
+<img src="{{article.image.url}}" alt="">
 <h1>{{article.title}}</h1>
 <h4>{{article.body}}</h4>
 <h5>{{article.date}}</h5>
