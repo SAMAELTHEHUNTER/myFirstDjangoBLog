@@ -1,1 +1,1 @@
-# meFirstDjangoBLog
+#myFirstDjangoProject
