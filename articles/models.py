@@ -5,7 +5,7 @@ class Article(models.Model):
     body = models.TextField()
     slug = models.SlugField()
     date = models.DateTimeField(auto_now_add = True)
-    # in add thumbnail
+    image = models.ImageField(default='default.jpg',blank=True)
     # addmin author
     def __str__(self):
         return self.title
