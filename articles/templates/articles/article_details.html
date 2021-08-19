@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{%block title%}
+<title>{{article.title}}</title>
+{%endblock%}
+
+{%block importStatics%}
+<link rel="stylesheet" href="{% static 'styles.css' %}">
+{%endblock%}
+
+{%block content%}
+<h1>{{article.title}}</h1>
+<h4>{{article.body}}</h4>
+<h5>{{article.date}}</h5>
+<h1><a href="{% url 'articles_home' %}">back</a></h1>
+{%endblock%}
