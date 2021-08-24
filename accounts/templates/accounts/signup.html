@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{%block title%}
+signup page
+{%endblock%}
+
+{%block importStatics%}
+<link rel="stylesheet" href="{% static 'styles.css' %}">
+{%endblock%}
+
+{%block content%}
+<h1>signup</h1>
+<form class="site_form" action="/users/signup/" method="post">
+  {{form}}
+  {% csrf_token %}
+  <input type="submit" value="submit!">
+</form>
+{%endblock%}

@@ -11,6 +11,7 @@ urlpatterns = [
     path('about/', views.about, name='about'),
     path('', views.Home, name='Home'),
     path ('articles/', include('articles.urls')),
+    path ('users/', include('accounts.urls')),
 ]
 
 
