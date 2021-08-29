@@ -1,0 +1,144 @@
+body{
+    background-image: url("loginwall.jpg");
+    width: 500px;
+    height: 700px;
+}
+
+h1{
+    position: relative;
+    left: 855px;
+    top: 95px;
+    font-family: Arial;
+    color: white;
+    font-style: italic;
+    font-size: 40px;
+   // border-bottom:10px solid black;
+}
+
+#div1{
+    position: relative;
+    left: 760px;
+    top: 250px;
+}
+
+#username{
+    width: 200px;
+    margin-left: 10px;
+    border: 5px solid gold;
+    color: black;
+    margin-bottom: 25px;
+    padding: 5px 5px;
+}
+
+#pass{
+    width: 200px;
+    margin-left: 15px;
+    border: 5px solid gold;
+    margin-bottom: 25px;
+    padding: 5px 5px;
+}
+
+#confpass {
+    width: 200px;
+    margin-left: 15px;
+    border: 5px solid gold;
+    position: relative;
+    left: -58.6px;
+    margin-bottom: 15px;
+    padding: 5px 5px;
+}
+
+#l1{
+    color: springgreen;
+    font-family: Tahoma;
+    text-shadow: 5px 10px 10px lightgreen;
+    text-decoration: underline;
+}
+
+#l2{
+    color: springgreen;
+    font-family: Tahoma;
+    text-shadow: 5px 10px 10px lightgreen;
+    text-decoration: underline;
+}
+
+#l3{
+    color: springgreen;
+    font-family: Tahoma;
+    text-shadow: 5px 10px 10px lightgreen;
+    text-decoration: underline;
+    position: relative;
+    left: -59.6px;
+}
+
+#bt{
+    position: relative;
+    left: 170px;
+    margin-top: 20px;
+    width: 70px;
+    height: 35px;
+}
+
+input{
+    box-shadow: 10px 10px 10px black;
+}
+
+#a1{
+    position: relative;
+    left: 986px;
+    top: 280px;
+    color:springgreen;
+    font-size: 16px;
+    font-family: Arial;
+}
+
+#a2{
+    position: relative;
+    left: 785px;
+    top: 146px;
+    color:springgreen;
+    font-size: 16px;
+    font-family: Arial;
+    margin-left: 8px;
+}
+
+#a1:hover{
+    background-color: black;
+    color: blue;
+}
+
+#a2:hover{
+    background-color: black;
+    color: blue;
+}
+
+#img1{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: -76px;
+    left: 481px;
+}
+
+#img2{
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: -30px;
+    left: 430px;
+}
+
+#img3{
+    width: 130px;
+    position: relative;
+    left: 643px;
+    top: -160px;
+}
+
+#img4{
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: 30px;
+    left: 258px;
+}

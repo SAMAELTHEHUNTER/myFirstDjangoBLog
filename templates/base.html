@@ -5,12 +5,21 @@
     <meta charset="utf-8">
 
     <title>
-    {%block title%}articles home{%endblock%}
+    {%block title%}
+    {%endblock%}
     </title>
 
+<!-- <link rel="stylesheet" href=
     {%block importStatics%}
-    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    "{% static 'styles.css' %}"
     {%endblock%}
+    > -->
+
+    <link rel="stylesheet" href=
+        {%block importStatic%}
+        "{% static 'styles.css' %}"
+        {%endblock%}
+        >
 
   </head>
   <body>
