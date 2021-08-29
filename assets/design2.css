@@ -1,0 +1,34 @@
+
+body {
+    background: url("../img/wallpaper3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;; 
+  }
+   #header_links button {
+      background: rgba(20, 30, 45, 0.4);
+      color: white;
+  }
+  #header_links button:hover {
+      background: rgba(20, 30, 45, 0.7);
+  } 
+  #html-icon {
+    height: 90px;
+    width: 70px;
+    color: rgba(255,165,0,0.5);
+  }
+  #content {
+    height: auto;
+    background: rgba(20, 30, 45, 0.4);
+  }
+  #content:hover #html-icon{
+      transition: 0.6s;
+      color: rgba(255,165,0,1);
+  }
+  #content:hover{
+    transition: 0.6s;
+    background: rgba(20, 30, 45, 0.7);
+  }
+  label {
+    color: white;
+  }
+  

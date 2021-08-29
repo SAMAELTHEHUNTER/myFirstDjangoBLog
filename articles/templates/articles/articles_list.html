@@ -5,8 +5,12 @@
 articles home
 {%endblock%}
 
-{%block importStatics%}
-<link rel="stylesheet" href="{% static 'styles.css' %}">
+<!-- {%block importStatics%}
+"{% static 'styles.css' %}"
+{%endblock%} -->
+
+{%block importStatic%}
+"{% static 'styles.css' %}"
 {%endblock%}
 
 {%block content%}

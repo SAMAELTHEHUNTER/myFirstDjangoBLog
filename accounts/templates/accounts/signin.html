@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+    <!-- <link rel="stylesheet" href="css/css/all.min.css"> -->
+    <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+    <script src="js/js/all.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    
+    <!-- <link rel="stylesheet" href="css/design.css"> -->
+    <link rel="stylesheet" href="{% static 'design2.css' %}">
+    <script src="js/code.js"></script>
+    <title>Sign In page</title>
+</head>
+<body>
+   <div class="container">
+       <div id="header_links" class="row d-flex flex-row flex-wrap justify-content-end">
+           <button class="col-md-1 btn btn-small text-white  border-0 mx-1">Login</button>
+           <button class="col-md-1 btn btn-small text-white border-0 mx-1">About Us</button>
+           <button class="col-md-1 btn btn-small text-white border-0 mx-1">Register</button>
+           <button class="col-md-1 btn btn-small text-white border-0 mx-1">Contact</button>
+       </div>
+      <div class="row my-5">
+          <div class="col-md-6 offset-md-3 my-sm-1 justify-content-center" id="content">
+            <div id="icon" class="d-flex justify-content-center">
+                <i id="html-icon" class="fab fa-html5" aria-hidden="true"></i>
+            </div>
+            <br>
+            <form action="#" class="need-validation">
+                <div class="form-group">
+                    <label for="uname">
+                        <i class="fa fa-user"></i>
+                        Username:
+                    </label>
+                    <input type="text" name="uname" id="uname" class="form-control" placeholder="Enter username:" required>
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Please fill out this field</div>
+                </div>
+                <div class="form-group">
+                    <label for="psw">
+                        <i class="fa fa-lock"></i>
+                        Password:
+                    </label>
+                    <input type="password" name="psw" id="psw" class="form-control" placeholder="Enter password" required>
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Please fill out this field</div>
+                </div>
+                <button type="submit" class="btn btn-outline-primary btn-block text-white my-2">submit</button>
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" name="keep" id="keep" class="custom-control-input custom-switch">
+                    <label for="keep" class="custom-control-label">keep Logged In</label>
+                    <a href="#" class="text-right text-white float-right">forgot password?</a>
+                    <br>
+                    <a href="#" class="text-bold text-white float-left ml-0 small my-2">CREATE ACCOUNT</a>
+                    <a href="#" class="text-bold text-white float-right  small my-1">NEED HELP?</a>
+                </div>
+            </form>
+          </div>
+      </div>
+      <script>
+        (function check() {
+            'use strict';
+            window.addEventListener('load',function(){
+                var forms = document.getElementsByClassName('needs-validaton');
+                var validation = Array.prototype.filter.call(forms,function(form){
+                    form.addEventListener('submit',function(event){
+                        if(form.checkValidity()=== false){
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    },false);
+                });
+            },false);
+        })();
+      </script>
+   </div>
+</body>
+</html>
